@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+
+
+  // /* position animation  */
+  // transition: .2s linear;
+}
+
+// keyframes start
+
+@keyframes fade-down{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+
+
+// keyframes end
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+body {
+  background: #151515;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+
+
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+header {
+  display: flex;
+  padding: 2rem 15%;
+  justify-content: space-between;
+  text-decoration: none;
+  animation: fade-down 0.5s;
+
+  .navbar a {
+    margin: 0 1rem;
+  }
+  .navbar a:hover{
+    color:rgb(158, 233, 217); ;
+  }
+
+
+}
+
+.about-me {
+  padding: 5rem ;
+  animation: fade-up 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  background: rgba(138, 206, 191, 0.158);
+  border-radius: 20rem;
+
+
+  .box-image img{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5rem;
+  }
+  .box-detail{
+    color: white;
+  }
+
+  .image-gif{
+    position: absolute;
+    top: 60%;
+    right: 20%;
+  }
+}
+
+.about-me>* {
+  flex: 1 1 100px;
+}
