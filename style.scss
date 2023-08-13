@@ -4,31 +4,31 @@
   font-family: 'Roboto', sans-serif;
 
 
-  // /* position animation  */
-  // transition: .2s linear;
+  /* position animation  */
+  transition: .2s linear;
 }
 
 // keyframes start
 
-@keyframes fade-down{
-  0%{
+@keyframes fade-down {
+  0% {
     opacity: 0;
     transform: translateY(-30px) scale(0.9);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px) scale(1);
   }
 }
 
-@keyframes fade-up{
-  0%{
+@keyframes fade-up {
+  0% {
     opacity: 0;
     transform: translateY(30px) scale(0.9);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px) scale(1);
   }
@@ -43,27 +43,32 @@ html::-webkit-scrollbar {
   width: 0 !important;
 }
 
-body {
-  background: #151515;
-  overflow-x: hidden;
-  width: 100%;
+body::-webkit-scrollbar {
+  width: 0 !important;
 }
 
-html {
 
-  position: absolute;
+
+html {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
-
-
 
   a {
     text-decoration: none;
     color: white;
   }
+}
+
+body {
+  background: #151515;
+  width: 100%;
+  overflow-x: hidden;
+
+
 }
 
 header {
@@ -76,41 +81,222 @@ header {
   .navbar a {
     margin: 0 1rem;
   }
-  .navbar a:hover{
-    color:rgb(158, 233, 217); ;
+
+  .navbar a:hover {
+    color: rgb(158, 233, 217);
+    ;
   }
 
 
 }
 
-.about-me {
-  padding: 5rem ;
+
+.main {
+
   animation: fade-up 0.3s;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  align-items: center;
   background: rgba(138, 206, 191, 0.158);
   border-radius: 20rem;
+  height: auto;
+
+  .home {
+    animation: fade-up 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 8%;
+    align-items: center;
+    gap: 2rem;
 
 
-  .box-image img{
-    width: 500px;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 5rem;
-  }
-  .box-detail{
-    color: white;
+
+    .box-image img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 50rem;
+
+    }
+
+    .box-detail {
+
+      color: white;
+
+      h1 {
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(144, 238, 222), 0 0 5px rgb(144, 238, 222);
+      }
+
+      h2 {
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(144, 238, 222), 0 0 5px rgb(144, 238, 222);
+      }
+
+      h3 {
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(144, 238, 222), 0 0 5px rgb(144, 238, 222);
+      }
+
+      h5 {
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(144, 238, 222), 0 0 5px rgb(144, 238, 222);
+      }
+
+
+
+    }
+
+
   }
 
-  .image-gif{
-    position: absolute;
-    top: 60%;
-    right: 20%;
+  .about-me {
+    animation: fade-up 0.3s;
+    display: none;
+
+    .box-about-me {
+      h1 {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      a {
+        background: #151515;
+        border-radius: 5rem;
+        padding: 1rem;
+        margin: .8rem 3rem;
+        position: absolute;
+        right: 20rem;
+
+      }
+      a:hover{
+        box-shadow: 1px 1px 2px black, 0 0 10px rgb(144, 238, 222), 0 0 3px rgb(144, 238, 222);  
+      }
+      img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: 10rem;
+      }
+    }
+
   }
+
+  .work {
+    animation: fade-up 0.3s;
+    display: none;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+
+    .box-project {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+
+
+      .box-item {
+        background: #151515;
+        border-radius: 2rem;
+        padding: 2rem;
+        height: 450px;
+        width: 340px;
+
+        span {
+          font-size: 80%;
+        }
+
+        img {
+          height:50%;
+          width: 100%;
+          border-radius: 1rem;
+          object-fit: cover;
+          margin-bottom: 1.5rem;
+
+
+        }
+
+        .link {
+          .git {
+            margin-right: .5rem;
+            background: green;
+            border-radius: 1rem;
+            padding: 0 .5rem;
+          }
+
+          .exam {
+            margin-right: .5rem;
+            background: blueviolet;
+            border-radius: 1rem;
+            padding: 0 .5rem;
+          }
+        }
+
+        .item {
+          display: flex;
+          gap: .5rem;
+          color: #151515;
+          margin: 1rem 0;
+
+          p {
+            font-size: 80%;
+          }
+
+          .js {
+            background: pink;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+          .re {
+            background: lightblue;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+          .html {
+            background: lightcoral;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+          .css {
+            background: lemonchiffon;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+          .node {
+            background: lightslategray;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+          .db {
+            background: lightgreen;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+          .unity {
+            background: gainsboro;
+            border-radius: 1rem;
+            padding: .2rem;
+          }
+
+        }
+      }
+
+      .box-item:hover {
+
+        box-shadow: 1px 1px 2px black, 0 0 10px rgb(144, 238, 222), 0 0 3px rgb(144, 238, 222);
+      }
+
+
+
+    }
+  }
+
+
 }
 
-.about-me>* {
+.home>* {
   flex: 1 1 100px;
 }

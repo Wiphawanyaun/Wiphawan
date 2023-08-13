@@ -1,53 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-      <!-- bootstrap -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
 
-       <!-- custom css file -->
+    <!-- custom css file -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header id="header">
-        <a href="#" class="brand">
+        <a href="#" onclick="showHome()">
             <h2>WIPHAWAN</h2>
         </a>
 
         <nav class="navbar ">
-            <a href="#Resume"><h5>Resume</h5></a>
-            <a href="#Skill"><h5>Skill</h5></a>
-            <a href="#Works"><h5>Works</h5></a>
+            <a href="#" onclick="showAboutme()">
+                <h5>About me</h5>
+            </a>
+
+            <a href="#" onclick="showWork()">
+                <h5>Projects</h5>
+            </a>
 
         </nav>
     </header>
-    <section class="about-me container">
-        <div class="box-image">
-            <img src="https://i.pinimg.com/736x/19/86/5e/19865e74aaa9470c0bc2000ab1b87935.jpg" alt="">
+    <section class="main container">
+        <!-- home start -->
+        <div class="home" id="home">
+            <div class="box-image">
+                <img src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.15752-9/364134662_1590800531667984_425395653916080190_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFwkdjp-zQBSgYZcLAF-2hzb0SDFxyp2rtvRIMXHKnau5Ptar_6HSMj1wphJQWNkUisrxYf-LwBY4pBT_YE-YJM&_nc_ohc=8vfPlstL8ccAX-EDOsd&_nc_ht=scontent.fbkk2-4.fna&oh=03_AdTICr8CcIybry4FGxst4ewwjy6Jg27Q_4qkyfzlAhMo1g&oe=64FB5EA0"
+                    alt="">
+            </div>
+            <div class="box-detail">
+                <h2>welcome</h2>
+                <h1>I'm Wiphawan Piapramong</h1>
+                <h5>Internship Front-end Developer</h5>
+            </div>
+
         </div>
-        <div class="box-detail">
-            <h1>Hi,I'm Wiphawan Piapramong</h1>
-            <h3>want to be Web developer</h3>
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, deleniti? Autem, nobis. Provident facere sint commodi ducimus, ad officia at.</span>
-        </div>
-        <div class="image-gif">
-            <img src="https://i.pinimg.com/originals/6d/9c/49/6d9c49c24dfc3f01420c0bbca656078e.gif" alt="">
+        <!-- home end -->
+
+
+        <!-- resume start  -->
+        <div class="about-me home" id="aboutme">
+
+            <div class="box-detail box-about-me">
+                <h1>About Me</h1>
+                <h3>น.ส. วิภาวัลย์ เปียประโมง
+                </h3>
+                <h5>ชื่อเล่น ญาอัญ</h5>
+                <p>ศึกษาอยู่ ชั้นปีที่ 4 คณะเทคโนโลยีสารสนเทศ สาขา เทคโนโลยีมัลติมีเดีย
+                    สถาบันเทคโนโลยีไทย-ญี่ปุ่น</p>
+                <p>ในสาขาของหนูนั้นส่วนใหญ่จะเรียนด้าน การวาดภาพ การทำเกม การตัดต่อ มีการเรียนเขียนโค้ดบ้างค่ะ ไม่ได้
+                    ละเอียดและลงลึงมาก แต่ตอนเรียนหนูชอบเกี่ยวกับการเขียนโค้ด และการทำ web
+                    ค่ะจึงลงวิชาเลือกส่วนใหญ่เป็นด้านนี้หมดเลย หนูอยากทำงานด้าน
+                    Front-end ค่ะ ถึงแม้ว่าพื้นฐานของหนูจะไม่เท่าคนที่เรียนสาย IT โดยตรง แต่หนูจะมุ่งมั่น
+                    ตั้งใจเรียนรู้และพัฒนาให้มากยิ่งขึ้นค่ะ</p>
+                <img src="https://i.pinimg.com/originals/15/26/5a/15265af91d058d33da9d448a7cd070f9.gif" alt="">
+                <a href="pic/Resume.pdf" download="Resume">Resume</a>
+            </div>
         </div>
 
-        <!-- <div class="box-detail">
-            <h1>Hi,I'm Wiphawan Piapramong</h1>
-            <h3>want to be Web developer</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, deleniti? Autem, nobis. Provident facere sint commodi ducimus, ad officia at.</p>
-        </div> -->
+        <!-- resume end  -->
+
+
+        <!-- works start  -->
+        <div class="work home" id="work">
+
+            <div class="box-detail ">
+                <h1>Projects</h1>
+                <div class="box-project">
+                    <div class="box-item">
+                        <img src="https://scontent.fbkk22-6.fna.fbcdn.net/v/t1.15752-9/366070956_1332395254350949_6568391901769225782_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHw8NWJZ49UAqCnt1a8Rilu-zNEDNjjqG37M0QM2OOobTSx-UZGwh8cu-J6ix_hRHUymgIn5T5eMJ3ISoAmLkz_&_nc_ohc=6RC2imp2AGcAX__RBfx&_nc_ht=scontent.fbkk22-6.fna&oh=03_AdQYLEU9Uhm8l68Ivv3kTqlrs5dCwazRvaBQYfubYjlzOQ&oe=64FEDB71"
+                            alt="">
+                        <h5>Be Pâtissier app</h5>
+                        <div class="link">
+                            <a href="https://drive.google.com/file/d/1-LhITE5zyh-ejoBtmGmQYN2zWCcAjikj/view?usp=sharing"
+                                class="exam">Video</a>
+                            <a href="https://github.com/Wiphawanyaun/ReactNativeFinalProject.git" class="git">Github</a>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea voluptas deserunt
+                            vitae quo a.</span>
+
+                        <div class="item">
+                            <p class="js">JavaScript</p>
+                            <p class="re">React.js</p>
+                        </div>
+
+                    </div>
+
+                    <div class="box-item">
+                        <img src="https://scontent.fbkk22-7.fna.fbcdn.net/v/t1.15752-9/365382459_965871727845666_3747680598316626748_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeENGuhMCeMwXxQXm3QPF8P1HFSZqYUUoPEcVJmphRSg8QQhGIg0SR8gK9l1YX0hxEf3CRPVJn0sP8o37r7SLf3B&_nc_ohc=YyJ4O73zPuoAX-x1fYP&_nc_ht=scontent.fbkk22-7.fna&oh=03_AdTOP95irrGuU7WG3Lic4acCL505HUliM7iFugxpOwhKtA&oe=64FEB613"
+                            alt="">
+                        <h5>Flower Shop page</h5>
+                        <div class="link">
+                            <a href="https://wiphawanyaun.github.io/FlowerShop/" class="exam">Website</a>
+                            <a href="https://github.com/Wiphawanyaun/FlowerShop.git" class="git">Github</a>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea voluptas deserunt
+                            vitae quo a.</span>
+                        <div class="item">
+                            <p class="js">JavaScript</p>
+                            <p class="html">HTML</p>
+                            <p class="css">CSS</p>
+
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <img src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.15752-9/365405428_838234284969127_5496872398228581359_n.png?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGD_a5_wPxkyGsr0hm98RusQFH4RddpqkNAUfhF12mqQ5bomKOYsIy9xK3MkHs9QBaTwSDi4VjhD4NCsVl0ZZtG&_nc_ohc=MFNX1jgfSU0AX9keUIJ&_nc_ht=scontent.fbkk22-2.fna&oh=03_AdTHlQoCq87BZpZ68xf5Q9lAigQWE8gCVDsaslCHZBhNXw&oe=64FECC31"
+                            alt="">
+                        <h5>Phone Shop CURD</h5>
+                        <div class="link">
+                            <a href="https://github.com/Wiphawanyaun/Final_Node.git" class="git">Github</a>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea voluptas deserunt
+                            vitae quo a.</span>
+                        <div class="item">
+                            <p class="js">JavaScript</p>
+                            <p class="node">Node.js</p>
+                            <p class="db">MongoDB</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <img src="https://scontent.fbkk22-6.fna.fbcdn.net/v/t1.15752-9/365383106_1012315403256441_3188564120841976215_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFqdtN58V544zoqw7xiu_LXMvlkzsbzliEy-WTOxvOWIeDAcOszUTR39J6K0-oLXm4QumCrKaUwV16b_RdipsxV&_nc_ohc=DuY5B6m1KOUAX-ZLdUN&_nc_ht=scontent.fbkk22-6.fna&oh=03_AdRHnwjHoDVl0sPPYhKTEShp6G1_V61mU03hrZNdlzO3iQ&oe=64FEC271"
+                            alt="">
+                        <h5>Shimamuko 2D Game</h5>
+                        <div class="link">
+                            <a href="https://www.youtube.com/watch?v=jMkeSZWBmyw" class="exam">Video</a>
+                            <a href="https://drive.google.com/drive/folders/1t7omIL4QyrldBM4AOsFB6kf_8YIA0wcx?usp=sharing"
+                                class="git">File Unity</a>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea voluptas deserunt
+                            vitae quo a.</span>
+                        <div class="item">
+                            <p class="unity">Unity</p>
+                        </div>
+                    </div>
+
+                    <div class="box-item">
+                        <img src="https://scontent.fbkk22-8.fna.fbcdn.net/v/t1.15752-9/365494215_828442482010270_1951862058445140682_n.png?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEJaSY6W6Ki3V7ORPcvisWPYV7MMLCW4X9hXswwsJbhf9EPgkY7o3ebR7Sss_enenJN65J-JB7KKQ_js_q2lcOR&_nc_ohc=5smXyD5tIO4AX_mqb_n&_nc_ht=scontent.fbkk22-8.fna&oh=03_AdTgRWujW5ijhqRjdYc3j0L_G4cF3GwALSU1fyYVUhJXew&oe=64FEC979"
+                            alt="">
+                        <h5>In the Wood 2D Game</h5>
+                        <div class="link">
+                            <a href="https://drive.google.com/file/d/1BJFK7cbPqlan6EV65l1CBRKT0PWDSNjp/view?usp=sharing"
+                                class="exam">Video</a>
+                            <a href="https://drive.google.com/file/d/14ZlpW-KHTuz_HB_ZWcTc_fjP0Wfxk5nS/view?usp=sharing"
+                                class="git">Design</a>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea voluptas deserunt
+                            vitae quo a.</span>
+                        <div class="item">
+                            <p class="unity">Unity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- works end  -->
+
     </section>
-    
-    
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>
