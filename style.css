@@ -79,8 +79,8 @@ header .navbar a:hover {
   min-width: 100%;
   min-height: 100%;
   z-index: -99;
-  filter: grayscale(30%);
-  opacity: 40%;
+  filter: grayscale(40%);
+  opacity: 20%;
 }
 .main .home {
   animation: fade-up 0.3s;
