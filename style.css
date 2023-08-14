@@ -116,7 +116,7 @@ header .navbar a:hover {
   padding: 1rem;
   margin: 0.8rem 1rem;
   position: absolute;
-  right: 23rem;
+  right: 28rem;
 }
 .main .about-me .box-about-me a:hover {
   box-shadow: 1px 1px 2px black, 0 0 10px rgb(144, 238, 222), 0 0 3px rgb(144, 238, 222);
@@ -125,7 +125,7 @@ header .navbar a:hover {
   position: absolute;
   width: 200px;
   height: 200px;
-  right: 13rem;
+  right: 18rem;
 }
 .main .work {
   animation: fade-up 0.3s;
