@@ -95,7 +95,18 @@ header {
   animation: fade-up 0.3s;
   background: rgba(138, 206, 191, 0.158);
   border-radius: 20rem;
-  height: auto;
+  height: auto;;
+
+  .video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -99;
+    filter: grayscale(30%);
+    opacity: 40%;
+  }
 
   .home {
     animation: fade-up 0.3s;
